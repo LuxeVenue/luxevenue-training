@@ -17,7 +17,7 @@ Never use emojis. No filler phrases. Get to the point immediately.
 VENUE_KNOWLEDGE = """
 VENUE REQUIREMENTS FOR STRATEGY & POWER MEETS:
 - Atmosphere: Sophisticated and private. For leaders, board members, and investors to plan for the future.
-- Scale: Maximum 20-25 attendees. Intimate but premium.
+- Scale: Maximum 50-60 attendees. Intimate but premium.
 - Seating: Round table or boardroom configuration — every member's voice reaches all others.
 - Key features to recommend:
   * Minimalist Branding: Elegant logo wall at entrance, matte finish (no glare in photos)

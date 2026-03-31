@@ -25,6 +25,12 @@ from agents.leadership_summit_agent import LeadershipSummitAgent
 from agents.conference_seminar_agent import ConferenceSeminarAgent
 from agents.workshop_training_agent import WorkshopTrainingAgent
 from agents.symposium_agent import SymposiumAgent
+from agents.award_night_gala_agent import AwardNightGalaAgent
+from agents.success_party_agent import SuccessPartyAgent
+from agents.product_launch_agent import ProductLaunchAgent
+from agents.offsite_agent import OffsiteAgent
+from agents.team_building_agent import TeamBuildingAgent
+from agents.cocktail_night_agent import CocktailNightAgent
 from agents.fallback_agent import FallbackAgent
 from core.config import settings
 from core.email_service import send_inquiry_email
@@ -51,6 +57,12 @@ AGENTS: dict[str, BaseAgent] = {
     "conference_seminar": ConferenceSeminarAgent(),
     "workshop_training": WorkshopTrainingAgent(),
     "symposium": SymposiumAgent(),
+    "award_night_gala": AwardNightGalaAgent(),
+    "success_party": SuccessPartyAgent(),
+    "product_launch": ProductLaunchAgent(),
+    "offsite": OffsiteAgent(),
+    "team_building": TeamBuildingAgent(),
+    "cocktail_night": CocktailNightAgent(),
     "fallback": FallbackAgent(),
 }
 
@@ -78,7 +90,13 @@ Respond with exactly ONE of these labels (no explanation):
 - conference_seminar    (conferences, seminars, industry events, knowledge sharing events, professional summits)
 - workshop_training     (workshops, training sessions, skill development, hands-on learning, team training)
 - symposium             (symposiums, academic events, research presentations, expert panels, scholarly discussions)
-- fallback              (weddings, birthdays, parties, social events, or unclear)
+- award_night_gala      (award nights, galas, award ceremonies, recognition events, achievement nights)
+- success_party         (success parties, celebration parties, milestone parties, team parties, victory parties)
+- product_launch        (product launches, brand launches, new product reveal, launch events, product unveiling)
+- offsite               (offsites, corporate retreats, resort trips, team getaways, team trips, company retreats)
+- team_building         (team building, team activities, corporate games, bonding activities, group challenges, team games)
+- cocktail_night        (cocktail nights, cocktail events, networking drinks, corporate bar night, mixology events)
+- fallback              (weddings, birthdays, social events, or unclear)
 
 User message: {message}"""
 
@@ -88,7 +106,8 @@ async def classify_intent(message: str) -> str:
     response = await llm.ainvoke(
         [SystemMessage(content=CLASSIFICATION_PROMPT.format(message=message))]
     )
-    label = response.content.strip().lower()
+    label = response.content.strip().lower().replace(" ", "_").replace("-", "_")
+    label = label.strip("-_ \t\n")
     return label if label in AGENTS else "fallback"
 
 

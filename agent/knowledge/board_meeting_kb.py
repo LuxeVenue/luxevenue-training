@@ -31,7 +31,6 @@ VENUE REQUIREMENTS FOR BOARD MEETINGS:
 - Water Placement: Water glass on right side. Agenda on left side. Always.
 - Seating Rule: Service starts from chairman and proceeds clockwise.
 - Backup Power: Always confirm double power backup from hotel — not even 1 minute of outage acceptable.
-- Fragrance: Light and silent environment. No strong perfumes from staff.
 - Timing: Quarterly meetings. Best time: 10 AM to 2 PM (mind most active). Full-day if needed.
 
 INSIDER KNOWLEDGE (not on Google — demonstrate expertise):
@@ -52,7 +51,6 @@ MENU GUIDANCE FOR BOARD MEETINGS:
   * Business lunch: In private lounge adjacent to boardroom. Quick, formal. Not in the meeting room.
 - Menu composition: Finger foods, nuts, fresh juices, light sandwiches, seasonal salad.
 - Staff: Trained corporate stewards (not regular waiters). Silent service protocol mandatory.
-- Absolutely no aromatic or heavy food in the room itself — strong smells are a distraction.
 """
 
 VENDOR_KNOWLEDGE = """
