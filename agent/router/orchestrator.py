@@ -116,7 +116,7 @@ Respond with exactly ONE of these labels (no explanation):
 - cocktail_night        (cocktail nights, cocktail events, networking drinks, corporate bar night, mixology events)
 - milestone_birthday    (milestone birthdays, 1st birthday, 18th birthday, 50th birthday, 60th birthday, birthday party, birthday celebration)
 - corporate_anniversary (corporate anniversary, company anniversary, silver jubilee, golden jubilee, 25 years of company, 50 years of company, business milestone anniversary)
-- marriage_anniversary  (marriage anniversary, wedding anniversary, silver anniversary, golden anniversary, couple anniversary, 25th wedding, 50th wedding)
+- marriage_anniversary  (marriage anniversary, wedding anniversary, silver anniversary, golden anniversary, couple anniversary, 25th wedding, 50th wedding, anniversary)
 - festive_party         (festive party, Diwali party, Holi party, Christmas party, New Year party, New Year eve, festive celebration, holiday party)
 - housewarming          (housewarming, griha pravesh, new home celebration, house warming party, new house party)
 - reunion_party         (reunion party, school reunion, college reunion, batch reunion, old friends reunion, family reunion, batchmates party)
